@@ -23,7 +23,7 @@ jobs:
       with:
         java-version: 17
         distribution: jdkfile
-        jdkFile: ${{ runner.temp }}/jdk-17_linux-x64_bin.tar.gz
+        jdkFile: ${{ runner.temp }}/jdk-17.0.12_linux-x64_bin.tar.gz
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
